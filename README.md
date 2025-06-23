@@ -1,3 +1,7 @@
+# morning-ritual
+
+Welcome to the hungry grounds for coffee lovers and foodies where coffee, cup &amp; food makes a rainbow of emotions together
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
