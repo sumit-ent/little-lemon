@@ -1,16 +1,41 @@
 footer {
-  background-color: #edefee;
-  display: block;
-  width: 100vw;
+  background-color: #edefee; /* Optional: Set a background color */
+  padding: 20px; /* Add padding for spacing */
 }
 
 .footer-menu {
   display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Arrange items in a row */
-  justify-content: center; /* Center the items horizontally */
-  gap: 1rem; /* Space between menu items */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add spacing between items */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
 
 .footer-menu li {
-  text-align: left; /* Aligns all <li> elements to the left */
+  flex: 1 1 200px; /* Make items flexible and responsive */
+  text-align: center; /* Center text inside each item */
+}
+
+.footer-menu img {
+  max-width: 100%; /* Ensure the image scales within its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer-menu ul {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove default list styling */
+}
+
+.footer-menu ul strong {
+  display: block; /* Ensure strong text is on its own line */
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+@media (max-width: 768px) {
+  .footer-menu li {
+    flex: 1 1 auto; /* Adjust flex properties for stacked layout */
+  }
 }

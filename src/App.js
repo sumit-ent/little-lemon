@@ -8,17 +8,15 @@ import About from "./components/About/About";
 
 function App() {
   return (
-    <div className="container-wrapper">
-      <div className="container">
-        <Header />
-        <main>
-          <Hero className="hero-wrapper" />
-          <Specials />
-          <Testimonials />
-          <About />
-        </main>
-        <Footer />
-      </div>
+    <div className="container">
+      <Header />
+      <main>
+        <Hero className="hero-wrapper" />
+        <Specials />
+        <Testimonials />
+        <About />
+      </main>
+      <Footer />
     </div>
   );
 }
