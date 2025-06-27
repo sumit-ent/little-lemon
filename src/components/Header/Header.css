@@ -1,0 +1,84 @@
+header > nav {
+  width: 100vw;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+  place-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: var(--font-family-primary-1);
+}
+
+.menu-item a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  font-family: var(--font-family-primary);
+  transition: color 0.3s ease;
+}
+
+.hamburger-logo,
+.close-icon {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  fill: var(--light-text-color); /* Matches header text color */
+  transition: transform 0.3s ease;
+}
+
+.close-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.brand-logo {
+  width: 100px;
+}
+
+@media (max-width: 700px) {
+  .hamburger-logo {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close-icon {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001; /* Ensure close icon is above the menu */
+  }
+
+  .menu {
+    display: none; /* Initially hide the menu */
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    background-color: white;
+    opacity: 0.9;
+    margin-top: 0;
+    padding: 2rem;
+    z-index: 1000;
+    transition: transform 4s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .menu.active {
+    display: flex; /* Show menu when active */
+    transform: translateX(0); /* Slide menu into view */
+  }
+}

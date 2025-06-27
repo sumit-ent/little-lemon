@@ -1,0 +1,16 @@
+footer {
+  background-color: #edefee;
+  display: block;
+  width: 100vw;
+}
+
+.footer-menu {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: center; /* Center the items horizontally */
+  gap: 1rem; /* Space between menu items */
+}
+
+.footer-menu li {
+  text-align: left; /* Aligns all <li> elements to the left */
+}
