@@ -83,6 +83,5 @@ header {
 
   .header-wrapper {
     justify-content: space-between; /* Space between brand logo and hamburger icon */
-    margin-left: 10px;
   }
 }

@@ -1,3 +1,35 @@
-.main-container {
-  margin: 10px 0;
+.specials-container {
+  font-family: var(--font-family-header);
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 19rem;
+  margin-top: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    display: grid;
+    gap: 0.5rem !important;
+    padding: 0 0.5rem;
+  }
+  .menu-button {
+    height: fit-content;
+    align-self: center;
+  }
+  .specials-container {
+    font-size: 0.9rem;
+    gap: 5rem;
+    margin-top: 0;
+  }
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  justify-content: center;
+  gap: 1.5rem;
 }

@@ -1,0 +1,26 @@
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #edefee;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 13px;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-image {
+  width: 100%;
+}
+
+.item-price {
+  color: #ee9972;
+}
+
+.add-button {
+  align-self: center;
+}

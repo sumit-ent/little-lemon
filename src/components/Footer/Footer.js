@@ -6,7 +6,7 @@ function Footer() {
         <li>
           <img
             src="./restaurantfood.jpg"
-            width="180px"
+            width="110px"
             height="220px"
             alt="brand logo"
           />

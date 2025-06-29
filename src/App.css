@@ -2,7 +2,9 @@
 :root {
   --font-family-primary-1: "Karla", sans-serif;
   --font-family-primary-2: "Markazi Text", serif;
+  --font-family-header: "Roboto", sans-serif;
   --font-color-primary: #1e1e1e;
+  --font-color-header: #f4ce14;
   --background-color-primary: #495e57;
 }
 
@@ -14,9 +16,26 @@ body {
   font-size: 14px;
 }
 
+button {
+  background-color: var(--font-color-header); /* Button background color */
+  color: var(--font-color-primary); /* Button font color */
+  font-weight: bold; /* Make button font bold */
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Remove default border */
+  padding: 0.5rem 1rem; /* Add padding for spacing */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.button:hover {
+  background-color: var(--font-color-primary); /* Change background on hover */
+  color: var(--font-color-header); /* Swap font color on hover */
+}
 @media (min-width: 768px) {
   body {
     font-size: 15px; /* Tablet */
+  }
+  button {
+    height: 3.5em;
   }
 }
 

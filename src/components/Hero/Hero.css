@@ -1,7 +1,46 @@
 .hero-container {
-  display: grid;
+  font-family: var(--font-family-header);
+  display: flex;
   width: 100vw;
+  height: 400px;
+  min-width: 300px;
+  flex-wrap: wrap;
   background-color: var(--background-color-primary);
   justify-content: center;
-  align-items: center;
+  align-content: flex-start;
+  gap: 1rem;
+}
+
+.hero-container > div {
+  max-width: 50%; /* Ensure each div doesn't exceed 50% width */
+  text-align: start;
+}
+
+.hero-container > h1 {
+  color: var(--font-color-header);
+  flex-basis: 100%;
+}
+
+.hero-container h2,
+p {
+  color: #edefee;
+}
+
+.hero-image img {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    font-size: 0.9rem;
+    height: 350px;
+    gap: 0.5rem;
+  }
+
+  .hero-image img {
+    width: 8rem;
+    height: 13rem;
+  }
 }
