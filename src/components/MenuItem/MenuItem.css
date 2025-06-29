@@ -9,12 +9,16 @@
   font-size: 13px;
 }
 
+@media (max-width: 768px) {
+}
+
 .item-name {
   font-weight: bold;
 }
 
 .item-image {
   width: 100%;
+  height: fit-content;
 }
 
 .item-price {

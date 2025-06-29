@@ -14,7 +14,7 @@
   .menu-items {
     display: grid;
     gap: 0.5rem !important;
-    padding: 0 0.5rem;
+    padding: 0 0.5rem !important;
   }
   .menu-button {
     height: fit-content;
@@ -29,7 +29,8 @@
 
 .menu-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: center;
   gap: 1.5rem;
+  padding: 0 1.5rem;
 }
