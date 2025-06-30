@@ -7,9 +7,22 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-size: 13px;
+
+  border: 1px solid #ddd; /* Add a border */
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 @media (max-width: 768px) {
+  .item-container {
+    font-size: 9px;
+  }
+}
+
+.item-spec {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 0.5rem;
 }
 
 .item-name {
@@ -25,6 +38,16 @@
   color: #ee9972;
 }
 
-.add-button {
-  align-self: center;
+.item-description {
+  padding: 0 0.5rem;
+  text-align: start;
+}
+
+.item-action {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  font-weight: bold;
+}
+
+.order-image {
+  padding-left: 0.5rem;
 }

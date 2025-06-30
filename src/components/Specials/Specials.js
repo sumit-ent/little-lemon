@@ -12,7 +12,6 @@ function Specials() {
         <MenuItem />
         <MenuItem />
         <MenuItem />
-        <MenuItem />
       </div>
     </>
   );

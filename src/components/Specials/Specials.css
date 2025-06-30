@@ -10,11 +10,20 @@
   margin-top: 1.5em;
 }
 
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 15.5rem));
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+
 @media (max-width: 768px) {
   .menu-items {
     display: grid;
-    gap: 0.5rem !important;
-    padding: 0 0.5rem !important;
+    grid-template-columns: repeat(2, minmax(100px, 1fr)) !important;
+    gap: 1rem !important;
+    padding: 0 1rem !important;
   }
   .menu-button {
     height: fit-content;
@@ -25,12 +34,4 @@
     gap: 5rem;
     margin-top: 0;
   }
-}
-
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 0 1.5rem;
 }
