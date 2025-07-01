@@ -1,3 +1,51 @@
-.main-container {
-  margin: 10px 0;
+.about-container {
+  font-family: var(--font-family-header);
+  display: flex;
+  width: 100vw;
+  height: 400px;
+  min-width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.about-container > div {
+  max-width: 50%; /* Ensure each div doesn't exceed 50% width */
+  text-align: start;
+}
+
+.about-text > .about-header {
+  color: var(--font-color-header);
+  flex-basis: 100%;
+  text-align: left;
+  font-size: x-large;
+}
+
+.secondary-header {
+  font-size: medium;
+}
+
+.about-description {
+  color: black;
+  font-weight: 100;
+}
+
+.about-image img {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    font-size: 0.9rem;
+    gap: 0.5rem;
+  }
+
+  .about-image img {
+    width: 8rem;
+    height: 13rem;
+  }
 }

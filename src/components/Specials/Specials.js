@@ -1,5 +1,6 @@
 import "./Specials.css";
 import MenuItem from "../MenuItem/MenuItem.js";
+import SPECIALS from "../../data/mock-specials.js";
 
 function Specials() {
   return (
@@ -9,9 +10,15 @@ function Specials() {
         <button className="menu-button">Online Menu</button>
       </div>
       <div className="menu-items">
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
+        {SPECIALS.map((special) => (
+          <MenuItem
+            key={special.id}
+            name={special.itemName}
+            price={special.price}
+            description={special.description}
+            image={special.image}
+          />
+        ))}
       </div>
     </>
   );

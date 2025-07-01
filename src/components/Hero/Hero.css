@@ -21,9 +21,10 @@
   flex-basis: 100%;
 }
 
-.hero-container h2,
+.hero-container div,
 p {
   color: #edefee;
+  font-weight: 300;
 }
 
 .hero-image img {

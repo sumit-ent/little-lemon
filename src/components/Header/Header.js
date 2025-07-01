@@ -1,5 +1,6 @@
 import "./Header.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Header() {
   const [menuActive, setMenuActive] = useState(false);
 
@@ -32,22 +33,22 @@ function Header() {
         <nav>
           <ul className={`menu ${menuActive ? "active" : ""}`}>
             <li className="menu-item">
-              <a href="/Home">Home</a>
+              <Link to="/home">Home</Link>
             </li>
             <li className="menu-item">
-              <a href="About">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li className="menu-item">
-              <a href="/Menu">Menu</a>
+              <Link to="/specials">Menu</Link>
             </li>
             <li className="menu-item">
-              <a href="/Rservations">Rservations</a>
+              <Link to="/Rservations">Rservations</Link>
             </li>
             <li className="menu-item">
-              <a href="/order-online">Order Online</a>
+              <Link to="/order-online">Order Online</Link>
             </li>
             <li className="menu-item">
-              <a href="/Login">Login</a>
+              <Link to="/Login">Login</Link>
             </li>
           </ul>
         </nav>

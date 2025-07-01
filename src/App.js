@@ -5,19 +5,24 @@ import Hero from "./components/Hero/Hero";
 import Specials from "./components/Specials/Specials";
 import Testimonials from "./components/Testimonials/Testimonials";
 import About from "./components/About/About";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <main>
-        <Hero />
-        <Specials />
-        <Testimonials />
-        <About />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="container">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/home" element={<Hero />} />
+            <Route path="/specials" element={<Specials />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

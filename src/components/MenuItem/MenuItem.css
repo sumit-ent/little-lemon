@@ -31,7 +31,8 @@
 
 .item-image {
   width: 100%;
-  height: fit-content;
+  height: 45%;
+  object-fit: cover;
 }
 
 .item-price {
@@ -41,6 +42,10 @@
 .item-description {
   padding: 0 0.5rem;
   text-align: start;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .item-action {
