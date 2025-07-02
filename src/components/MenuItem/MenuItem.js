@@ -1,9 +1,24 @@
 import "./MenuItem.css";
+import { useState } from "react";
 
 function Specials(props) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="item-container">
-      <img className="item-image" src={props.image}></img>
+      <div className="image-container">
+        {isLoading && <div className="item-image-loader"></div>}
+        <img
+          className="item-image"
+          src={props.image}
+          style={{ display: isLoading ? "none" : "block" }}
+          onLoad={handleImageLoad}
+        ></img>
+      </div>
       <div className="item-spec">
         <span className="item-name">{props.name}</span>{" "}
         <span className="item-price">{props.price}</span>

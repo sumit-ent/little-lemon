@@ -22,7 +22,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 15.5rem)) !important;
     gap: 1rem !important;
-    padding: 0 1rem !important;
+    padding: 0 1rem 1rem 1rem !important;
   }
   .menu-button {
     height: fit-content;

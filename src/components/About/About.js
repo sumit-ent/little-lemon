@@ -1,6 +1,13 @@
 import "./About.css";
+import { useState } from "react";
 
 function About() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="about-container">
       <div className="about-text">
@@ -16,7 +23,13 @@ function About() {
         </p>
       </div>
       <div className="about-image">
-        <img src="/Mario-and-Adrian.jpg" alt="Restaurant food" />
+        {isLoading && <div className="image-loader"></div>}
+        <img
+          src="/Mario-and-Adrian.jpg"
+          alt="Restaurant food"
+          style={{ display: isLoading ? "none" : "block" }}
+          onLoad={handleImageLoad}
+        />
       </div>
     </div>
   );

@@ -12,6 +12,12 @@ function Header() {
     setMenuActive(false);
   };
 
+  const handleNavClick = (event) => {
+    if (event.target.tagName === "A") {
+      setMenuActive(false);
+    }
+  };
+
   return (
     <>
       <header className="header-wrapper">
@@ -30,7 +36,7 @@ function Header() {
           onClick={handleHamburgerClick}
         />
         <img className="brand-logo" src="/Logo.svg" alt="brand logo" />
-        <nav>
+        <nav id="nav-bar" onClick={handleNavClick}>
           <ul className={`menu ${menuActive ? "active" : ""}`}>
             <li className="menu-item">
               <Link to="/home">Home</Link>
