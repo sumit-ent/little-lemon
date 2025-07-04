@@ -1,6 +1,13 @@
 import "./Hero.css";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/reservations"); // Navigate to the specified internal path
+  };
+
   return (
     <div className="hero-container">
       <h1>Little Lemon</h1>
@@ -11,7 +18,9 @@ function Hero() {
           food and classic cocktails in a lively but casual environment. The
           restaurant features alt
         </p>
-        <button className="reserve-button">Reserve a Table</button>
+        <button className="reserve-button" onClick={handleClick}>
+          Reserve a Table
+        </button>
       </div>
       <div className="hero-image">
         <img src="/restaurantfood.jpg" alt="Restaurant food" />
