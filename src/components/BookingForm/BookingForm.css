@@ -1,0 +1,93 @@
+.booking-form {
+  font-family: inherit;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.response-image {
+  width: 48%;
+  aspect-ratio: 1 / 1; /* Ensures square shape */
+  object-fit: cover;
+  max-width: 400px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 20px;
+  height: 100%;
+}
+
+.booking-block {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.booking-header {
+  color: var(--font-color-header);
+  flex-basis: 100%;
+}
+
+.location-name {
+  color: #495e57;
+  font-weight: 300;
+  text-align: left;
+}
+
+.form-group > label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.booking-confirmation {
+  color: #495e57;
+  font-weight: 300;
+  text-align: center;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 10px; /* Adds spacing between the input and span */
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Three inputs per row on larger screens */
+  }
+  .booking-button {
+    width: 100%;
+    max-width: 200px; /* Optional: limit button width */
+    margin: 20px 0; /* Add space above the button */
+  }
+}
+
+@media (max-width: 767px) {
+  .form-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* One input per row on smaller screens */
+  }
+  .booking-button {
+    width: 100%;
+    max-width: none; /* Full width on smaller screens */
+    margin: 20px 0; /* Add space above the button */
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.required {
+  color: red;
+}

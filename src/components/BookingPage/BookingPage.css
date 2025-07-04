@@ -1,0 +1,21 @@
+input,
+select {
+  height: 35px;
+}
+
+.booking-container {
+  font-family: var(--font-family-header);
+  width: 100vw;
+  min-width: 300px;
+}
+
+.booking-header {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 8rem;
+    height: 13rem;
+  }
+}
