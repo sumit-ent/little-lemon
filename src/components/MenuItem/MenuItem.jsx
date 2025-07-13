@@ -1,5 +1,6 @@
 import "./MenuItem.css";
 import { useState } from "react";
+import LazyImage from "../../utilities/common-utilities";
 
 function Specials(props) {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,12 +13,12 @@ function Specials(props) {
     <div className="item-container">
       <div className="image-container">
         {isLoading && <div className="item-image-loader"></div>}
-        <img
+        <LazyImage
           className="item-image"
-          src={props.image}
+          imageName={props.image}
           style={{ display: isLoading ? "none" : "block" }}
           onLoad={handleImageLoad}
-        ></img>
+        ></LazyImage>
       </div>
       <div className="item-spec">
         <span className="item-name">{props.name}</span>{" "}

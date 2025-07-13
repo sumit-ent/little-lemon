@@ -1,5 +1,6 @@
 import "./About.css";
 import { useState } from "react";
+import Marionddrian from "../../assets/images/Mario-and-Adrian.jpg";
 
 function About() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +26,7 @@ function About() {
       <div className="about-image">
         {isLoading && <div className="image-loader"></div>}
         <img
-          src="/Mario-and-Adrian.jpg"
+          src={Marionddrian}
           alt="Restaurant food"
           style={{ display: isLoading ? "none" : "block" }}
           onLoad={handleImageLoad}

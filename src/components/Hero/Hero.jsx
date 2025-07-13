@@ -1,5 +1,6 @@
 import "./Hero.css";
 import { useNavigate } from "react-router-dom";
+import restaurantfood from "../../assets/images/restaurantfood.jpg"; // Adjust the path as necessary
 
 function Hero() {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ function Hero() {
         </button>
       </div>
       <div className="hero-image">
-        <img src="/restaurantfood.jpg" alt="Restaurant food" />
+        <img src={restaurantfood} alt="Restaurant food" />
       </div>
     </div>
   );

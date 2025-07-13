@@ -1,6 +1,6 @@
 import "./Specials.css";
-import MenuItem from "../MenuItem/MenuItem.js";
-import SPECIALS from "../../data/mock-specials.js";
+import MenuItem from "../MenuItem/MenuItem";
+import SPECIALS from "../../data/mock-specials";
 
 function Specials() {
   return (
